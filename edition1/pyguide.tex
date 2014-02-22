@@ -19,8 +19,6 @@
 \date{}
 \def\mykeywords{Baiju, Muthukadan, Python, Programming, Guide, Book, Tutorial}
 
-%\input{vc}
-
 % donot indent first line of paragraph.
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{5pt plus 2pt minus 1pt}
@@ -36,7 +34,7 @@
 
 \usepackage[xetex, 
 	colorlinks=true,
-	urlcolor=BlueViolet,
+	urlcolor=black,
 	plainpages=false,
   	pdfpagelabels,
   	bookmarksnumbered,
@@ -46,7 +44,6 @@
   	pdfkeywords={\mykeywords}
   	]{hyperref}
 
-\usepackage{hyperref}
 
 \begin{document}
 
@@ -75,8 +72,14 @@ BoldItalicFont = DejaVuSansMono-BoldOblique.ttf,
 ] {DejaVu Sans Mono}
 
 
+\setcounter{page}{0}
+\pagenumbering{roman}
+
 \input{./title.tex}
+
 \input{./copyright.tex}
+
+
 \input{./introduction.tex}
 
 \end{document}
