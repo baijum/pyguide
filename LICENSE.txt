@@ -1,0 +1,9 @@
+The text in this book excluding source code is licensed under the
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+International License:
+http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+The source code in this book is under public domain.
+
+Each font used to produce the PDF has its own license, please
+check the respective file.

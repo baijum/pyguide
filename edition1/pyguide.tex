@@ -1,0 +1,82 @@
+\documentclass[11pt]{book}
+\usepackage[paperwidth=8in, paperheight=10in]{geometry}
+
+\def\myauthor{Baiju Muthukadan}
+\def\mytitle{A Comprehensive Guide to Python Programming}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myaffiliation{}
+\def\myaddress{}
+\def\myemail{baiju.m.mail@gmail.com}
+\def\myweb{http://muthukadan.net}
+\def\myphone{+91 9945973441}
+\def\myversion{}
+\def\myrevision{}
+
+\date{}
+\def\mykeywords{Baiju, Muthukadan, Python, Programming, Guide, Book, Tutorial}
+
+%\input{vc}
+
+% donot indent first line of paragraph.
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 2pt minus 1pt}
+
+% sloppy
+% ------
+% Less strict (opposite to default fussy) space size between words. Therefore
+% less hyphenation.
+\sloppy
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+
+\usepackage[xetex, 
+	colorlinks=true,
+	urlcolor=BlueViolet,
+	plainpages=false,
+  	pdfpagelabels,
+  	bookmarksnumbered,
+  	pdftitle={\mytitle},
+  	pagebackref,
+  	pdfauthor={\myauthor},
+  	pdfkeywords={\mykeywords}
+  	]{hyperref}
+
+\usepackage{hyperref}
+
+\begin{document}
+
+\setmainfont
+[ Path = fonts/,
+UprightFont = Vollkorn-Regular.otf,
+ItalicFont = Vollkorn-Italic.otf,
+BoldFont = Vollkorn-Bold.otf,
+BoldItalicFont = Vollkorn-BoldItalic.otf,
+] {Vollkorn}
+
+\setsansfont
+[ Path = fonts/,
+UprightFont = DejaVuSans.ttf,
+ItalicFont = DejaVuSans-Oblique.ttf,
+BoldFont = DejaVuSans-Bold.ttf,
+BoldItalicFont = DejaVuSans-BoldOblique.ttf,
+] {DejaVu Sans Mono}
+
+\setmonofont
+[ Path = fonts/,
+UprightFont = DejaVuSansMono.ttf,
+ItalicFont = DejaVuSansMono-Oblique.ttf,
+BoldFont = DejaVuSansMono-Bold.ttf,
+BoldItalicFont = DejaVuSansMono-BoldOblique.ttf,
+] {DejaVu Sans Mono}
+
+
+\input{./title.tex}
+\input{./copyright.tex}
+\input{./introduction.tex}
+
+\end{document}
