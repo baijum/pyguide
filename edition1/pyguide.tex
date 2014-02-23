@@ -32,11 +32,44 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{5pt plus 2pt minus 1pt}
 
+\newlength{\admonitionwidth}
+\setlength{\admonitionwidth}{0.9\textwidth}
+\newlength{\docinfowidth}
+\setlength{\docinfowidth}{0.9\textwidth}
+
 % sloppy
 % ------
 % Less strict (opposite to default fussy) space size between words. Therefore
 % less hyphenation.
 \sloppy
+
+\usepackage{listings}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{makeidx}
+\makeindex
+\usepackage{tabularx}
+
+\definecolor{listinggray}{gray}{0.9}
+\lstset{language=python}
+\lstset{commentstyle=\color{MidnightBlue},
+        stringstyle=\color{OliveGreen},
+        identifierstyle=\color{black},
+        keywordstyle=\color{Bittersweet},
+        showspaces=false}
+%\lstset{frame=trBL,frameround=tttt}
+%\lstset{backgroundcolor=\color{listinggray},rulecolor=\color{blue}}
+
+\lstset{linewidth=\textwidth}
+\lstset{ %
+  basicstyle=\ttfamily\scriptsize, % the size of the fonts that are used for the code
+  showstringspaces=false, % underline spaces within strings
+  numbers=left, % where to put the line-numbers
+  numberstyle=\scriptsize, % the size of the fonts that are used for the line-numbers
+  stepnumber=1, % the step between two line-numbers. If it's 1 each line will be numbered
+  numbersep=5pt, % how far the line-numbers are from the code
+  numberblanklines=false,
+}
+
 
 \usepackage{fancyhdr}
 \setlength{\headheight}{15.2pt}
@@ -50,9 +83,12 @@
 \usepackage{xunicode}
 \defaultfontfeatures{Mapping=tex-text} % To support LaTeX quoting style
 
-\usepackage[xetex, 
-	colorlinks=true,
-	urlcolor=black,
+\usepackage[xetex,
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black,
 	plainpages=false,
   	pdfpagelabels,
   	bookmarksnumbered,
@@ -62,6 +98,9 @@
   	pdfkeywords={\mykeywords}
   	]{hyperref}
 
+\hypersetup{
+    pdfborder = {0 0 0}
+}
 
 \begin{document}
 
