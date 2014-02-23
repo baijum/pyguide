@@ -19,6 +19,8 @@
 \date{}
 \def\mykeywords{Baiju, Muthukadan, Python, Programming, Guide, Book, Tutorial}
 
+\renewcommand\contentsname{Table Of Contents}
+
 % donot indent first line of paragraph.
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{5pt plus 2pt minus 1pt}
@@ -28,6 +30,14 @@
 % Less strict (opposite to default fussy) space size between words. Therefore
 % less hyphenation.
 \sloppy
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+
+\lhead[A Comprehensive Guide to Python Programming]{A Comprehensive Guide to Python Programming}
+%\chead[<even output>]{<odd output>}
+\rhead{}
 
 \usepackage{fontspec}
 \usepackage{xunicode}
@@ -71,7 +81,7 @@ BoldFont = DejaVuSansMono-Bold.ttf,
 BoldItalicFont = DejaVuSansMono-BoldOblique.ttf,
 ] {DejaVu Sans Mono}
 
-
+\frontmatter
 \setcounter{page}{0}
 \pagenumbering{roman}
 
@@ -79,7 +89,17 @@ BoldItalicFont = DejaVuSansMono-BoldOblique.ttf,
 
 \input{./copyright.tex}
 
+\newpage
+\vspace*{2in}
+\center{To My Mother}
 
+\tableofcontents
+
+\input{./preface.tex}
+
+\mainmatter
 \input{./introduction.tex}
+\appendix
 
+\backmatter
 \end{document}
