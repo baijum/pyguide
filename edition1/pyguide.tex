@@ -1,5 +1,11 @@
 \documentclass[11pt]{book}
-\usepackage[paperwidth=8in, paperheight=10in]{geometry}
+\usepackage[paperwidth=8in,
+    paperheight=10in,
+    top=.875in,
+    bottom=.875in,
+    left=.875in,
+    right=.875in
+    ]{geometry}
 
 \def\myauthor{Baiju Muthukadan}
 \def\mytitle{A Comprehensive Guide to Python Programming}
@@ -41,6 +47,7 @@
 
 \usepackage{fontspec}
 \usepackage{xunicode}
+\defaultfontfeatures{Mapping=tex-text} % To support LaTeX quoting style
 
 \usepackage[xetex, 
 	colorlinks=true,
@@ -100,6 +107,7 @@ To My Mother
 \input{./preface.tex}
 
 \mainmatter
+\setcounter{page}{1}
 \pagenumbering{arabic}
 \input{./introduction.tex}
 \input{./fundamentals.tex}
