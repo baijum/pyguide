@@ -94,17 +94,28 @@ BoldItalicFont = DejaVuSansMono-BoldOblique.ttf,
 
 \input{./title.tex}
 
+\thispagestyle{plain}
 \input{./copyright.tex}
 
 \newpage
+\thispagestyle{empty} %% Remove header and footer.
 \vspace*{2in}
 \begin{center}
-To My Mother
+{\it To, My Mother}
 \end{center}
+
+\newpage
+\thispagestyle{plain}
 
 \tableofcontents
 
+\newpage
+\thispagestyle{plain}
+
 \input{./preface.tex}
+
+\newpage
+\thispagestyle{plain}
 
 \mainmatter
 \setcounter{page}{1}
